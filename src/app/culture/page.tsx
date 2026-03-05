@@ -16,35 +16,34 @@ const AnimatedServiceRow = ({
     const [isHovered, setIsHovered] = useState(false);
 
     return (
-        <Link href="/works" className="block">
-            <div
-                className="relative overflow-hidden border-b border-zinc-800 py-8 md:py-12 cursor-pointer group"
-                onMouseEnter={() => setIsHovered(true)}
-                onMouseLeave={() => setIsHovered(false)}
+        <div
+            className="relative overflow-hidden border-b border-zinc-800 py-8 md:py-12 cursor-default flex items-center"
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+        >
+            {/* Default text */}
+            <motion.div
+                animate={{ y: isHovered ? "-120%" : "0%" }}
+                transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+                className="w-full"
             >
-                {/* Default text */}
-                <motion.div
-                    animate={{ y: isHovered ? "-100%" : "0%" }}
-                    transition={{ duration: 0.5, ease: [0.76, 0, 0.24, 1] }}
-                >
-                    <h2 className="text-2xl md:text-4xl lg:text-5xl font-medium font-sans tracking-tighter">
-                        {defaultText}
-                    </h2>
-                </motion.div>
+                <h2 className="text-2xl md:text-4xl lg:text-5xl font-medium font-sans uppercase tracking-tight">
+                    {defaultText}
+                </h2>
+            </motion.div>
 
-                {/* Hover Text */}
-                <motion.div
-                    className="absolute inset-0 flex items-center"
-                    initial={{ y: "100%" }}
-                    animate={{ y: isHovered ? "0%" : "100%" }}
-                    transition={{ duration: 0.5, ease: [0.76, 0, 0.24, 1] }}
-                >
-                    <h2 className="text-2xl md:text-4xl lg:text-5xl font-medium font-sans tracking-tighter w-full">
-                        {hoverText}
-                    </h2>
-                </motion.div>
-            </div>
-        </Link>
+            {/* Hover Text */}
+            <motion.div
+                initial={{ y: "120%" }}
+                animate={{ y: isHovered ? "0%" : "120%" }}
+                transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+                className="absolute inset-0 flex items-center w-full"
+            >
+                <h2 className="text-2xl md:text-4xl lg:text-5xl font-medium font-sans uppercase tracking-tight w-full">
+                    {hoverText}
+                </h2>
+            </motion.div>
+        </div>
     );
 };
 
@@ -114,7 +113,7 @@ export default function Culture() {
                         defaultText="Craft Iconic Brands with Powerful Media Strategies*"
                         hoverText={
                             <>
-                                ILLUMINATING BRANDS WITH <span className="font-serif italic font-light text-zinc-400 mx-2">STRATEGY AND DESIGN</span>
+                                ILLUMINATING BRANDS WITH <span className="font-serif italic font-light text-zinc-400 mx-2 tracking-wide">STRATEGY AND DESIGN</span>
                             </>
                         }
                     />
@@ -122,7 +121,7 @@ export default function Culture() {
                         defaultText="Create meaningful sticky Experiences That last*"
                         hoverText={
                             <>
-                                <span className="font-serif italic font-light text-zinc-400 mr-2">STRATEGIES</span> THAT MAKE YOUR BRAND SHINE <span className="font-serif italic font-light text-zinc-400 ml-2">BRIGHTER</span>
+                                <span className="font-serif italic font-light text-zinc-400 mr-2 tracking-wide">STRATEGIES</span> THAT MAKE YOUR BRAND SHINE <span className="font-serif italic font-light text-zinc-400 ml-2 tracking-wide">BRIGHTER</span>
                             </>
                         }
                     />
@@ -130,7 +129,7 @@ export default function Culture() {
                         defaultText="Power Your Growth with Smart Commerce Solutions*"
                         hoverText={
                             <>
-                                <span className="font-serif italic font-light text-zinc-400 mr-2">EVOLVING</span> ECOMMERCE TO <span className="font-serif italic font-light text-zinc-400 mx-2">POWER</span> SALES
+                                <span className="font-serif italic font-light text-zinc-400 mr-2 tracking-wide">EVOLVING</span> ECOMMERCE TO <span className="font-serif italic font-light text-zinc-400 mx-2 tracking-wide">POWER</span> SALES
                             </>
                         }
                     />
@@ -138,7 +137,7 @@ export default function Culture() {
                         defaultText="Future-Proof Your Business with Scalable Tech & Data*"
                         hoverText={
                             <>
-                                <span className="font-serif italic font-light text-zinc-400 mr-2">INTELLIGENT</span> SYSTEMS BUILT TO <span className="font-serif italic font-light text-zinc-400 mx-2">SCALE</span> WITH YOU
+                                <span className="font-serif italic font-light text-zinc-400 mr-2 tracking-wide">INTELLIGENT</span> SYSTEMS BUILT TO <span className="font-serif italic font-light text-zinc-400 mx-2 tracking-wide">SCALE</span> WITH YOU
                             </>
                         }
                     />
@@ -146,7 +145,7 @@ export default function Culture() {
                         defaultText="Unlock the Power of AI to Transform Your Business*"
                         hoverText={
                             <>
-                                AI <span className="font-serif italic font-light text-zinc-400 mx-2">INNOVATION</span> TAILORED TO YOUR <span className="font-serif italic font-light text-zinc-400 ml-2">GOALS</span>
+                                AI <span className="font-serif italic font-light text-zinc-400 mx-2 tracking-wide">INNOVATION</span> TAILORED TO YOUR <span className="font-serif italic font-light text-zinc-400 ml-2 tracking-wide">GOALS</span>
                             </>
                         }
                     />
