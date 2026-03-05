@@ -1,50 +1,59 @@
-import Image from "next/image";
 import Footer from "@/components/Footer";
+import Link from "next/link";
 
 export default function Works() {
     const portfolioItems = [
         {
             title: "Invisible",
+            slug: "invisible",
             image: "https://images.unsplash.com/photo-1558655146-d09347e92766?q=80&w=2664&auto=format&fit=crop",
             aspect: "aspect-[4/5]",
         },
         {
             title: "Pivit",
+            slug: "pivit",
             image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop",
             aspect: "aspect-square",
         },
         {
             title: "West Operators",
+            slug: "west-operators",
             image: "https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=2600&auto=format&fit=crop",
             aspect: "aspect-[4/5]",
         },
         {
             title: "Infinity Constellation",
+            slug: "infinity-constellation",
             image: "https://images.unsplash.com/photo-1541701494587-cb58502866ab?q=80&w=2670&auto=format&fit=crop",
             aspect: "aspect-square",
         },
         {
             title: "Vosk",
+            slug: "vosk",
             image: "https://images.unsplash.com/photo-1620121692029-d088224ddc74?q=80&w=2664&auto=format&fit=crop",
             aspect: "aspect-[4/5]",
         },
         {
             title: "Havencraft",
+            slug: "havencraft",
             image: "https://images.unsplash.com/photo-1614850523459-c2f4c699c52e?q=80&w=2664&auto=format&fit=crop",
             aspect: "aspect-square",
         },
         {
             title: "Sciemo",
+            slug: "sciemo",
             image: "https://images.unsplash.com/photo-1618005192384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop",
             aspect: "aspect-[4/5]",
         },
         {
             title: "Solvea",
+            slug: "solvea",
             image: "https://images.unsplash.com/photo-1550684848-fac1c5b4e853?q=80&w=2670&auto=format&fit=crop",
             aspect: "aspect-square",
         },
         {
             title: "Prime Builders",
+            slug: "prime-builders",
             image: "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?q=80&w=2670&auto=format&fit=crop",
             aspect: "aspect-[4/5]",
         },
@@ -66,7 +75,7 @@ export default function Works() {
             <section className="px-6 md:px-16 lg:px-24 pb-32">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 lg:gap-16">
                     {portfolioItems.map((item, index) => (
-                        <div key={index} className="flex flex-col group cursor-pointer">
+                        <Link href={`/works/${item.slug}`} key={index} className="flex flex-col group cursor-pointer block">
                             <div className={`relative ${item.aspect} w-full overflow-hidden bg-zinc-900 mb-6`}>
                                 <Image
                                     src={item.image}
@@ -80,7 +89,7 @@ export default function Works() {
                             <h3 className="text-2xl md:text-3xl font-bold tracking-tight text-white group-hover:text-zinc-300 transition-colors duration-300">
                                 {item.title}
                             </h3>
-                        </div>
+                        </Link>
                     ))}
                 </div>
             </section>

@@ -120,7 +120,7 @@ export default async function ProjectPage({
 
             {/* 2. Hero Image */}
             <section className="w-full">
-                <div className="relative w-full h-[50vh] md:h-[70vh] bg-zinc-900 overflow-hidden">
+                <div className="relative w-full h-[60vh] md:h-[80vh] bg-zinc-900 overflow-hidden">
                     <Image
                         src={project.heroImage}
                         alt={`${project.title} Hero Image`}
@@ -191,28 +191,15 @@ export default async function ProjectPage({
             {/* 5. Next Project Navigation */}
             <section className="border-t border-zinc-800">
                 <Link
-                    href={`/works/${project.nextSlug}`}
-                    className="group block w-full px-6 md:px-16 lg:px-24 py-24 md:py-32 hover:bg-white hover:text-black transition-colors duration-500"
+                    href="/works"
+                    className="group block w-full px-6 md:px-16 lg:px-24 py-24 md:py-32 hover:bg-white hover:text-black transition-colors duration-500 text-center md:text-left"
                 >
-                    <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-8">
-                        <div>
-                            <span className="text-zinc-500 group-hover:text-zinc-400 font-mono text-sm tracking-widest uppercase mb-4 block transition-colors">
-                                NEXT PROJECT
-                            </span>
-                            <h2 className="text-6xl md:text-8xl lg:text-9xl font-bold tracking-tighter uppercase leading-none capitalize">
-                                {projectsData[project.nextSlug]?.title || "PROJECT"}
+                    <div className="flex flex-col md:flex-row justify-between items-center md:items-end gap-8">
+                        <div className="w-full">
+                            <h2 className="text-5xl md:text-8xl lg:text-9xl font-bold tracking-tighter uppercase leading-none inline-flex items-center gap-4">
+                                Next Project
+                                <span className="transform transition-transform duration-500 group-hover:translate-x-8">→</span>
                             </h2>
-                        </div>
-                        <div className="hidden md:block">
-                            <svg
-                                className="w-24 h-24 -rotate-45 group-hover:rotate-0 transition-transform duration-500"
-                                fill="none"
-                                stroke="currentColor"
-                                viewBox="0 0 24 24"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <path strokeLinecap="square" strokeLinejoin="miter" strokeWidth={1} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                            </svg>
                         </div>
                     </div>
                 </Link>
