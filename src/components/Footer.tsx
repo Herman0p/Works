@@ -2,17 +2,17 @@ import Link from "next/link";
 
 export default function Footer() {
     return (
-        <footer className="bg-black text-white pt-32 pb-8 px-6 md:px-12 lg:px-24 border-t border-zinc-900">
+        <footer className="bg-black text-white pt-32 pb-8 px-6 md:px-12 lg:px-24 border-t border-zinc-900 overflow-hidden">
             <div className="flex flex-col w-full">
                 {/* 1. Massive Brand Text */}
-                <div className="w-full mb-20 text-center md:text-left">
-                    <h2 className="text-[15vw] leading-none font-bold tracking-tighter w-full block">
+                <div className="w-full mb-16 text-center md:text-left flex justify-center md:justify-start">
+                    <h2 className="text-[22vw] md:text-[15vw] leading-[0.8] md:leading-none font-bold tracking-tighter w-full block">
                         RADIANCE
                     </h2>
                 </div>
 
-                {/* 2. Links Layout (4-Column Grid) */}
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-8">
+                {/* 2. Links Layout (2-Column Mobile, 4-Column Desktop) */}
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-x-6 gap-y-12 md:gap-8">
 
                     {/* Column 1: Socials & Copyright */}
                     <div className="flex flex-col justify-between h-full">
@@ -40,7 +40,7 @@ export default function Footer() {
                     </div>
 
                     {/* Column 2: Internal Links (Culture, Works) */}
-                    <div className="text-xs font-bold tracking-widest text-zinc-500 uppercase flex flex-col gap-4">
+                    <div className="text-xs font-bold tracking-widest text-zinc-500 uppercase flex flex-col gap-4 mt-2">
                         <Link href="/culture" className="hover:text-white transition-colors">
                             CULTURE
                         </Link>
@@ -50,14 +50,14 @@ export default function Footer() {
                     </div>
 
                     {/* Column 3: Internal Links (Insights) */}
-                    <div className="text-xs font-bold tracking-widest text-zinc-500 uppercase flex flex-col gap-4">
+                    <div className="text-xs font-bold tracking-widest text-zinc-500 uppercase flex flex-col gap-4 md:mt-2">
                         <Link href="/insights" className="hover:text-white transition-colors">
                             INSIGHTS
                         </Link>
                     </div>
 
                     {/* Column 4: Internal Links (Contact, Privacy Policy) */}
-                    <div className="text-xs font-bold tracking-widest text-zinc-500 uppercase flex flex-col gap-4">
+                    <div className="text-xs font-bold tracking-widest text-zinc-500 uppercase flex flex-col gap-4 md:mt-2">
                         <Link href="/contact" className="hover:text-white transition-colors">
                             CONTACT
                         </Link>
