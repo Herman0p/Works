@@ -44,7 +44,7 @@ const blogData: Record<string, any> = {
 const fallbackArticle = {
     title: "Insight Not Found",
     date: "Unknown Date",
-    author: "Radiance Editorial",
+    author: "Uncleman Editorial",
     heroImage: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?q=80&w=2670&auto=format&fit=crop",
     tags: ["Unknown"],
     content: "<p>The article you are looking for does not exist or has been removed. Please return to the insights page to browse our latest thoughts.</p>"

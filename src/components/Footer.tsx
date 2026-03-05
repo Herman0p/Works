@@ -7,7 +7,7 @@ export default function Footer() {
                 {/* 1. Massive Brand Text */}
                 <div className="w-full mb-16 text-center md:text-left flex justify-center md:justify-start">
                     <h2 className="text-[22vw] md:text-[15vw] leading-[0.8] md:leading-none font-bold tracking-tighter w-full block">
-                        RADIANCE
+                        UNCLEMAN
                     </h2>
                 </div>
 
@@ -35,7 +35,7 @@ export default function Footer() {
                             </a>
                         </div>
                         <div className="text-xs font-bold tracking-widest text-zinc-500 uppercase mt-12 md:mt-auto">
-                            ©2026 RADIANCE
+                            ©2026 UNCLEMAN
                         </div>
                     </div>
 

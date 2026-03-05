@@ -58,10 +58,10 @@ export default function Culture() {
                     <span>Culture</span>
                 </div>
                 <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter max-w-5xl leading-[1.1] mb-12">
-                    Radiance Delivers Sunshine Across Every Frequency
+                    Uncleman Delivers Sunshine Across Every Frequency
                 </h1>
                 <p className="text-xl md:text-3xl font-light text-zinc-400 max-w-3xl leading-relaxed">
-                    At Radiance, we're redefining the traditional design agency model by seamlessly blending human-crafted creativity with intelligent systems. We don't just build brands; we engineer ecosystems designed for scalable growth and lasting impact.
+                    At Uncleman, we're redefining the traditional design agency model by seamlessly blending human-crafted creativity with intelligent systems. We don't just build brands; we engineer ecosystems designed for scalable growth and lasting impact.
                 </p>
             </section>
 
@@ -81,7 +81,7 @@ export default function Culture() {
                         <div className="text-zinc-600 font-mono text-sm">(02)</div>
                         <h3 className="text-2xl font-bold">Design once, scale everywhere.</h3>
                         <p className="text-zinc-400 font-light leading-relaxed">
-                            Radiance delivers tailored, premium design systems that adapt and grow with your business, eliminating redundant work.
+                            Uncleman delivers tailored, premium design systems that adapt and grow with your business, eliminating redundant work.
                         </p>
                     </div>
                     {/* Principle 3 */}

@@ -19,7 +19,7 @@ export default function Navbar() {
             <div className="max-w-7xl mx-auto flex justify-between items-center">
                 {/* Left: Logo */}
                 <Link href="/" className="text-2xl font-bold tracking-widest text-white">
-                    RADIANCE
+                    UNCLEMAN
                 </Link>
 
                 {/* Center: Desktop Navigation */}
