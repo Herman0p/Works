@@ -250,7 +250,30 @@ export default function Home() {
         </motion.div>
       </section>
 
-      {/* 5. Section (04) NOTEWORTHY */}
+      {/* 5. Section (05) SELECTED CLIENTS */}
+      <section className="py-24 md:py-32 border-t border-zinc-900 overflow-hidden">
+        <div className="px-6 md:px-16 lg:px-24 mb-16 md:mb-24">
+          <div className="text-sm tracking-widest text-zinc-500 font-mono uppercase">
+            (05) SELECTED CLIENTS
+          </div>
+        </div>
+        <div className="flex whitespace-nowrap items-center py-12">
+          <motion.div
+            className="flex whitespace-nowrap items-center"
+            animate={{ x: ["0%", "-50%"] }}
+            transition={{ repeat: Infinity, ease: "linear", duration: 20 }}
+          >
+            <h2 className="text-6xl md:text-8xl lg:text-[9rem] font-bold tracking-tighter text-zinc-300 pr-8">
+              NIKE ✦ VERCEL ✦ STRIPE ✦ GOOGLE ✦ FRAMER ✦ FIGMA ✦
+            </h2>
+            <h2 className="text-6xl md:text-8xl lg:text-[9rem] font-bold tracking-tighter text-zinc-300 pr-8">
+              NIKE ✦ VERCEL ✦ STRIPE ✦ GOOGLE ✦ FRAMER ✦ FIGMA ✦
+            </h2>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* 6. Section (06) NOTEWORTHY */}
       <section className="px-6 md:px-16 lg:px-24 py-24 md:py-32 border-t border-zinc-900">
         <div className="flex flex-col md:flex-row gap-12 md:gap-24">
           <div className="md:w-1/4">
@@ -261,7 +284,7 @@ export default function Home() {
               transition={{ duration: 0.8, ease: customEase }}
               className="text-sm tracking-widest text-zinc-500 font-mono uppercase"
             >
-              (04) NOTEWORTHY
+              (06) NOTEWORTHY
             </motion.div>
           </div>
           <div className="md:w-3/4">
