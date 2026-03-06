@@ -1,3 +1,4 @@
+'use client';
 import { useParams } from 'next/navigation';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import Link from 'next/link';
