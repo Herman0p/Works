@@ -57,12 +57,24 @@ export default function Culture() {
                     <span>/</span>
                     <span>Culture</span>
                 </div>
-                <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter max-w-5xl leading-[1.1] mb-12">
+                <motion.h1
+                    initial={{ opacity: 0, y: 50 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8, ease: [0.33, 1, 0.68, 1] }}
+                    className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter max-w-5xl leading-[1.1] mb-12"
+                >
                     Uncleman Delivers Sunshine Across Every Frequency
-                </h1>
-                <p className="text-xl md:text-3xl font-light text-zinc-400 max-w-3xl leading-relaxed">
-                    At Uncleman, we're redefining the traditional design agency model by seamlessly blending human-crafted creativity with intelligent systems. We don't just build brands; we engineer ecosystems designed for scalable growth and lasting impact.
-                </p>
+                </motion.h1>
+                <motion.div
+                    initial={{ opacity: 0, y: 40 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, margin: "-100px" }}
+                    transition={{ duration: 0.8, ease: "easeOut" }}
+                >
+                    <p className="text-xl md:text-3xl font-light text-zinc-400 max-w-3xl leading-relaxed">
+                        At Uncleman, we're redefining the traditional design agency model by seamlessly blending human-crafted creativity with intelligent systems. We don't just build brands; we engineer ecosystems designed for scalable growth and lasting impact.
+                    </p>
+                </motion.div>
             </section>
 
             {/* 2. Principles Grid */}
@@ -108,7 +120,13 @@ export default function Culture() {
                 <div className="text-sm tracking-widest text-zinc-500 font-mono uppercase mb-16 md:mb-24">
                     Capabilities
                 </div>
-                <div className="flex flex-col flex-wrap border-t border-zinc-800">
+                <motion.div
+                    initial={{ opacity: 0, y: 40 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, margin: "-100px" }}
+                    transition={{ duration: 0.8, ease: "easeOut" }}
+                    className="flex flex-col flex-wrap border-t border-zinc-800"
+                >
                     <AnimatedServiceRow
                         defaultText="Craft Iconic Brands with Powerful Media Strategies*"
                         hoverText={
@@ -149,7 +167,7 @@ export default function Culture() {
                             </>
                         }
                     />
-                </div>
+                </motion.div>
             </section>
 
             {/* 4. DNA / Team Section ('PIXELS + PEOPLE') */}
@@ -158,11 +176,17 @@ export default function Culture() {
                     <div className="text-sm tracking-widest text-zinc-500 font-mono uppercase shrink-0 md:w-1/4">
                         DNA
                     </div>
-                    <div className="md:w-3/4">
+                    <motion.div
+                        initial={{ opacity: 0, y: 40 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true, margin: "-100px" }}
+                        transition={{ duration: 0.8, ease: "easeOut" }}
+                        className="md:w-3/4"
+                    >
                         <h2 className="text-4xl md:text-6xl font-bold tracking-tight max-w-3xl">
                             Inspired by people. Powered by AI. Designed for impact.
                         </h2>
-                    </div>
+                    </motion.div>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-16">
@@ -218,9 +242,15 @@ export default function Culture() {
                         Purpose
                     </div>
                     <div className="md:w-3/4">
-                        <h2 className="text-4xl md:text-5xl font-light text-zinc-400 max-w-2xl mb-12">
+                        <motion.h2
+                            initial={{ opacity: 0, y: 40 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true, margin: "-100px" }}
+                            transition={{ duration: 0.8, ease: "easeOut" }}
+                            className="text-4xl md:text-5xl font-light text-zinc-400 max-w-2xl mb-12"
+                        >
                             UNDER The LIGHT
-                        </h2>
+                        </motion.h2>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-16">
                             {/* Value 1 */}
                             <div>
