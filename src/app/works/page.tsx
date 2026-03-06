@@ -113,7 +113,7 @@ export default function Works() {
                     {portfolioItems.slice(0, visibleCount).map((item, index) => (
                         <motion.div
                             key={index}
-                            initial={{ opacity: 0, y: 50 }}
+                            initial={{ opacity: 0, y: 40 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true, margin: '-50px' }}
                             transition={{ duration: 0.6, ease: 'easeOut', delay: index * 0.1 }}
@@ -142,10 +142,10 @@ export default function Works() {
             {visibleCount < portfolioItems.length && (
                 <section className="px-6 md:px-16 lg:px-24 pb-32 flex justify-center">
                     <motion.div
-                        initial={{ opacity: 0, y: 50 }}
+                        initial={{ opacity: 0, y: 40 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true, margin: '-50px' }}
-                        transition={{ duration: 0.8, ease: 'easeOut' }}
+                        transition={{ duration: 0.6, ease: 'easeOut' }}
                     >
                         <button
                             onClick={handleLoadMore}

@@ -14,7 +14,7 @@ export default function Contact() {
                     <span>Contact Us</span>
                 </div>
                 <motion.h1
-                    initial={{ opacity: 0, y: 60 }}
+                    initial={{ opacity: 0, y: 50 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, ease: [0.33, 1, 0.68, 1] }}
                     className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter leading-[1.1] max-w-5xl"
@@ -29,8 +29,9 @@ export default function Contact() {
                     {/* Row 1: Name & Email */}
                     <motion.div
                         initial={{ opacity: 0, y: 40 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8, ease: [0.33, 1, 0.68, 1], delay: 0.2 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true, margin: '-50px' }}
+                        transition={{ duration: 0.6, ease: 'easeOut', delay: 0.2 }}
                         className="grid grid-cols-1 md:grid-cols-2 gap-12"
                     >
                         <div className="flex flex-col group">
@@ -64,8 +65,9 @@ export default function Contact() {
                     {/* Row 2: Company & Website */}
                     <motion.div
                         initial={{ opacity: 0, y: 40 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8, ease: [0.33, 1, 0.68, 1], delay: 0.3 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true, margin: '-50px' }}
+                        transition={{ duration: 0.6, ease: 'easeOut', delay: 0.3 }}
                         className="grid grid-cols-1 md:grid-cols-2 gap-12"
                     >
                         <div className="flex flex-col group">
@@ -98,8 +100,9 @@ export default function Contact() {
                     {/* Row 3: Role & Department Dropdowns */}
                     <motion.div
                         initial={{ opacity: 0, y: 40 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8, ease: [0.33, 1, 0.68, 1], delay: 0.4 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true, margin: '-50px' }}
+                        transition={{ duration: 0.6, ease: 'easeOut', delay: 0.4 }}
                         className="grid grid-cols-1 md:grid-cols-2 gap-12"
                     >
                         <div className="flex flex-col group">
@@ -144,8 +147,9 @@ export default function Contact() {
                     {/* Row 4: Services Checkboxes */}
                     <motion.div
                         initial={{ opacity: 0, y: 40 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8, ease: [0.33, 1, 0.68, 1], delay: 0.5 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true, margin: '-50px' }}
+                        transition={{ duration: 0.6, ease: 'easeOut', delay: 0.5 }}
                         className="flex flex-col mt-4"
                     >
                         <label className="text-zinc-500 font-mono text-sm tracking-widest uppercase mb-8">
@@ -167,8 +171,9 @@ export default function Contact() {
                     {/* Row 5: Budget Dropdown */}
                     <motion.div
                         initial={{ opacity: 0, y: 40 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8, ease: [0.33, 1, 0.68, 1], delay: 0.6 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true, margin: '-50px' }}
+                        transition={{ duration: 0.6, ease: 'easeOut', delay: 0.6 }}
                         className="flex flex-col group mt-4"
                     >
                         <label htmlFor="budget" className="text-zinc-500 font-mono text-sm tracking-widest uppercase mb-4 group-focus-within:text-white transition-colors">
@@ -190,8 +195,9 @@ export default function Contact() {
                     {/* Row 6: Message Textarea */}
                     <motion.div
                         initial={{ opacity: 0, y: 40 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8, ease: [0.33, 1, 0.68, 1], delay: 0.7 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true, margin: '-50px' }}
+                        transition={{ duration: 0.6, ease: 'easeOut', delay: 0.7 }}
                         className="flex flex-col group mt-4"
                     >
                         <label htmlFor="message" className="text-zinc-500 font-mono text-sm tracking-widest uppercase mb-4 group-focus-within:text-white transition-colors">
@@ -210,8 +216,9 @@ export default function Contact() {
                     {/* Row 7: Submit Button */}
                     <motion.div
                         initial={{ opacity: 0, y: 40 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8, ease: [0.33, 1, 0.68, 1], delay: 0.8 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true, margin: '-50px' }}
+                        transition={{ duration: 0.6, ease: 'easeOut', delay: 0.8 }}
                         className="mt-8"
                     >
                         <button
