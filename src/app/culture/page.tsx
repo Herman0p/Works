@@ -214,14 +214,11 @@ export default function Culture() {
                         }
                     ].map((member, index) => (
                         <div key={index} className={`mb-6 ${member.marginTopClass}`}>
-                            <Link href={`/team/${member.slug}`} className="block relative overflow-hidden cursor-pointer group">
+                            <Link href={`/team/${member.slug}`} className="group block relative overflow-hidden cursor-pointer aspect-[4/5] md:aspect-[3/4]">
                                 <img
                                     src={member.image}
                                     alt={member.name}
-                                    style={{ filter: 'grayscale(100%)', transition: 'filter 1s ease-out, transform 1s ease-out' }}
-                                    onMouseEnter={(e) => e.currentTarget.style.filter = 'grayscale(0%)'}
-                                    onMouseLeave={(e) => e.currentTarget.style.filter = 'grayscale(100%)'}
-                                    className="w-full aspect-[4/5] md:aspect-[3/4] object-cover group-hover:scale-[1.03]"
+                                    className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105"
                                 />
                             </Link>
                             <h3 className="text-2xl font-bold mb-2 mt-6">
