@@ -214,16 +214,12 @@ export default function Culture() {
                         }
                     ].map((member, index) => (
                         <div key={index} className={`mb-6 ${member.marginTopClass}`}>
-                            <Link href={`/team/${member.slug}`} className="team-portrait group block relative overflow-hidden cursor-pointer aspect-[3/4] w-full bg-zinc-900">
-                                <div className="team-portrait-img relative w-full h-full overflow-hidden">
-                                    <Image
-                                        src={member.image}
-                                        alt={member.name}
-                                        fill
-                                        sizes="(max-width: 768px) 100vw, 33vw"
-                                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                                    />
-                                </div>
+                            <Link href={`/team/${member.slug}`} className="block relative overflow-hidden cursor-pointer group">
+                                <img
+                                    src={member.image}
+                                    alt={member.name}
+                                    className="w-full aspect-[4/5] md:aspect-[3/4] object-cover grayscale group-hover:grayscale-0 transition-all duration-[1000ms] ease-out group-hover:scale-[1.03]"
+                                />
                             </Link>
                             <h3 className="text-2xl font-bold mb-2 mt-6">
                                 {member.name}

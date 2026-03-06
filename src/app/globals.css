@@ -24,13 +24,3 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
-
-/* Team portrait grayscale hover effect */
-.team-portrait-img {
-  filter: grayscale(100%);
-  transition: filter 0.7s ease;
-}
-
-.team-portrait:hover .team-portrait-img {
-  filter: grayscale(0%);
-}
