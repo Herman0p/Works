@@ -191,47 +191,47 @@ export default function Culture() {
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-16">
                     {/* Team Member 1 */}
-                    <Link href="/about" className="relative z-50 block overflow-hidden cursor-pointer group mb-6 mt-0">
-                        <div className="relative aspect-[3/4] w-full overflow-hidden bg-zinc-900 filter grayscale transition-all duration-500 group-hover:grayscale-0">
+                    <div className="mb-6 mt-0">
+                        <Link href="/about" className="block relative z-[9999] cursor-pointer group overflow-hidden aspect-[3/4] w-full bg-zinc-900 filter grayscale transition-all duration-500 group-hover:grayscale-0">
                             <Image
                                 src="/hermansyah.jpg"
                                 alt="Hermansyah Adika Putra"
                                 fill
                                 sizes="(max-width: 768px) 100vw, 33vw"
-                                className="object-cover object-top w-full h-full transition-transform duration-700 group-hover:scale-105 ease-out"
+                                className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-[1.03]"
                             />
-                        </div>
+                        </Link>
                         <h3 className="text-2xl font-bold mb-2 mt-6">Hermansyah Adika Putra<span className="text-zinc-600 font-light ml-1">*</span></h3>
                         <p className="text-zinc-400 font-light">CEO & Founder</p>
-                    </Link>
+                    </div>
                     {/* Team Member 2 */}
-                    <Link href="/about" className="relative z-50 block overflow-hidden cursor-pointer group mb-6 md:mt-16">
-                        <div className="relative aspect-[3/4] w-full overflow-hidden bg-zinc-900 filter grayscale transition-all duration-500 group-hover:grayscale-0">
+                    <div className="mb-6 md:mt-16">
+                        <Link href="/about" className="block relative z-[9999] cursor-pointer group overflow-hidden aspect-[3/4] w-full bg-zinc-900 filter grayscale transition-all duration-500 group-hover:grayscale-0">
                             <Image
                                 src="https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=2661&auto=format&fit=crop"
                                 alt="Sibel Damar"
                                 fill
                                 sizes="(max-width: 768px) 100vw, 33vw"
-                                className="object-cover w-full h-full transition-transform duration-700 group-hover:scale-105 ease-out"
+                                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
                             />
-                        </div>
+                        </Link>
                         <h3 className="text-2xl font-bold mb-2 mt-6">Sibel Damar<span className="text-zinc-600 font-light ml-1">*</span></h3>
                         <p className="text-zinc-400 font-light">Head of Marketing</p>
-                    </Link>
+                    </div>
                     {/* Team Member 3 */}
-                    <Link href="/about" className="relative z-50 block overflow-hidden cursor-pointer group mb-6 md:mt-32">
-                        <div className="relative aspect-[3/4] w-full overflow-hidden bg-zinc-900 filter grayscale transition-all duration-500 group-hover:grayscale-0">
+                    <div className="mb-6 md:mt-32">
+                        <Link href="/about" className="block relative z-[9999] cursor-pointer group overflow-hidden aspect-[3/4] w-full bg-zinc-900 filter grayscale transition-all duration-500 group-hover:grayscale-0">
                             <Image
                                 src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=2574&auto=format&fit=crop"
                                 alt="Dave Blakely"
                                 fill
                                 sizes="(max-width: 768px) 100vw, 33vw"
-                                className="object-cover w-full h-full transition-transform duration-700 group-hover:scale-105 ease-out"
+                                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
                             />
-                        </div>
+                        </Link>
                         <h3 className="text-2xl font-bold mb-2 mt-6">Dave Blakely<span className="text-zinc-600 font-light ml-1">*</span></h3>
                         <p className="text-zinc-400 font-light">Advisor</p>
-                    </Link>
+                    </div>
                 </div>
             </section>
 
