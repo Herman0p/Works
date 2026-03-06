@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+/* eslint-disable @typescript-eslint/no-unused-vars */
 "use client";
 
 import { useState } from "react";
@@ -218,7 +219,7 @@ export default function Culture() {
                                 <img
                                     src={member.image}
                                     alt={member.name}
-                                    className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105"
+                                    className="w-full aspect-[3/4] object-cover grayscale transition-all duration-700 hover:grayscale-0 hover:scale-[1.03] cursor-pointer"
                                 />
                             </Link>
                             <h3 className="text-2xl font-bold mb-2 mt-6">
