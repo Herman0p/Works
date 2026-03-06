@@ -11,7 +11,7 @@ const containerVariants = {
   hidden: {},
   visible: {
     transition: {
-      staggerChildren: 0.15,
+      staggerChildren: 0.04,
     },
   },
 };
@@ -20,7 +20,7 @@ const itemVariants = {
   hidden: { y: "100%" },
   visible: {
     y: "0%",
-    transition: { duration: 1.2, ease: appyEase },
+    transition: { duration: 0.5, ease: appyEase },
   },
 };
 
@@ -38,7 +38,7 @@ export default function Home() {
                 className="text-6xl md:text-8xl lg:text-[10rem] font-bold tracking-tighter leading-[0.9]"
                 initial={{ y: "120%" }}
                 animate={{ y: "0%" }}
-                transition={{ duration: 1.2, delay: i * 0.15, ease: appyEase }}
+                transition={{ duration: 0.5, delay: i * 0.04, ease: appyEase }}
               >
                 {word}
               </motion.h1>
@@ -51,7 +51,7 @@ export default function Home() {
             className="text-2xl md:text-4xl lg:text-5xl font-light text-zinc-400 tracking-tight"
             initial={{ y: "120%" }}
             animate={{ y: "0%" }}
-            transition={{ duration: 1.2, delay: 0.4, ease: appyEase }}
+            transition={{ duration: 0.5, delay: 0.1, ease: appyEase }}
           >
             Build Bold. Build Fast. Build Once.
           </motion.h2>
@@ -61,7 +61,7 @@ export default function Home() {
           <motion.div
             initial={{ y: "120%" }}
             animate={{ y: "0%" }}
-            transition={{ duration: 1.2, delay: 0.5, ease: appyEase }}
+            transition={{ duration: 0.5, delay: 0.15, ease: appyEase }}
           >
             <Link href="/works" className="bg-white text-black px-10 py-5 rounded-full text-lg md:text-xl font-semibold hover:bg-zinc-200 hover:scale-105 transition-all duration-300 inline-flex items-center gap-4">
               View all work
@@ -77,7 +77,7 @@ export default function Home() {
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, margin: "-100px" }}
+        viewport={{ once: true, margin: "0px" }}
       >
         <div className="flex flex-col md:flex-row gap-12 md:gap-24">
           <div className="md:w-1/4">
@@ -107,7 +107,7 @@ export default function Home() {
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
+          viewport={{ once: true, margin: "0px" }}
         >
           <div className="md:w-1/4">
             <div className="md:sticky md:top-32 overflow-hidden pb-2">
@@ -130,7 +130,7 @@ export default function Home() {
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
+          viewport={{ once: true, margin: "0px" }}
         >
           <div className="group border-t border-zinc-800 pt-8 overflow-hidden pr-2">
             <motion.div variants={itemVariants}>
@@ -166,7 +166,7 @@ export default function Home() {
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
+          viewport={{ once: true, margin: "0px" }}
         >
           <div className="md:w-1/4 overflow-hidden pb-2">
             <motion.div variants={itemVariants} className="text-sm tracking-widest text-zinc-500 font-mono uppercase">
@@ -187,7 +187,7 @@ export default function Home() {
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
+          viewport={{ once: true, margin: "0px" }}
         >
           <div className="overflow-hidden py-2 px-1">
             <motion.div variants={itemVariants}>
@@ -266,8 +266,8 @@ export default function Home() {
           <motion.div
             initial={{ y: "100%" }}
             whileInView={{ y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 1.2, ease: appyEase }}
+            viewport={{ once: true, margin: "0px" }}
+            transition={{ duration: 0.5, ease: appyEase }}
             className="inline-block"
           >
             <Link href="/works" className="px-10 py-5 rounded-full border border-zinc-600 text-xl font-medium hover:bg-white hover:text-black transition-colors duration-300 inline-block">
@@ -308,8 +308,8 @@ export default function Home() {
               <motion.div
                 initial={{ y: "100%" }}
                 whileInView={{ y: 0 }}
-                viewport={{ once: true, margin: "-100px" }}
-                transition={{ duration: 1.2, ease: appyEase }}
+                viewport={{ once: true, margin: "0px" }}
+                transition={{ duration: 0.5, ease: appyEase }}
                 className="text-sm tracking-widest text-zinc-500 font-mono uppercase"
               >
                 (06) NOTEWORTHY
@@ -322,7 +322,7 @@ export default function Home() {
               variants={containerVariants}
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, margin: "-100px" }}
+              viewport={{ once: true, margin: "0px" }}
             >
               {[
                 {

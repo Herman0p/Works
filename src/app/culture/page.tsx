@@ -60,7 +60,7 @@ export default function Culture() {
                 <motion.h1
                     initial={{ opacity: 0, y: 50 }}
                     animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8, ease: [0.33, 1, 0.68, 1] }}
+                    transition={{ duration: 0.5, ease: [0.33, 1, 0.68, 1] }}
                     className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter max-w-5xl leading-[1.1] mb-12"
                 >
                     Uncleman Delivers Sunshine Across Every Frequency
@@ -68,8 +68,8 @@ export default function Culture() {
                 <motion.div
                     initial={{ opacity: 0, y: 40 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true, margin: "-50px" }}
-                    transition={{ duration: 0.6, ease: "easeOut" }}
+                    viewport={{ once: true, margin: "0px" }}
+                    transition={{ duration: 0.5, ease: "easeOut" }}
                 >
                     <p className="text-xl md:text-3xl font-light text-zinc-400 max-w-3xl leading-relaxed">
                         At Uncleman, we're redefining the traditional design agency model by seamlessly blending human-crafted creativity with intelligent systems. We don't just build brands; we engineer ecosystems designed for scalable growth and lasting impact.
@@ -123,8 +123,8 @@ export default function Culture() {
                 <motion.div
                     initial={{ opacity: 0, y: 40 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true, margin: "-50px" }}
-                    transition={{ duration: 0.6, ease: "easeOut" }}
+                    viewport={{ once: true, margin: "0px" }}
+                    transition={{ duration: 0.5, ease: "easeOut" }}
                     className="flex flex-col flex-wrap border-t border-zinc-800"
                 >
                     <AnimatedServiceRow
@@ -179,8 +179,8 @@ export default function Culture() {
                     <motion.div
                         initial={{ opacity: 0, y: 40 }}
                         whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true, margin: "-100px" }}
-                        transition={{ duration: 0.8, ease: "easeOut" }}
+                        viewport={{ once: true, margin: "0px" }}
+                        transition={{ duration: 0.5, ease: "easeOut" }}
                         className="md:w-3/4"
                     >
                         <h2 className="text-4xl md:text-6xl font-bold tracking-tight max-w-3xl">
@@ -245,8 +245,8 @@ export default function Culture() {
                         <motion.h2
                             initial={{ opacity: 0, y: 40 }}
                             whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true, margin: "-50px" }}
-                            transition={{ duration: 0.6, ease: "easeOut" }}
+                            viewport={{ once: true, margin: "0px" }}
+                            transition={{ duration: 0.5, ease: "easeOut" }}
                             className="text-4xl md:text-5xl font-light text-zinc-400 max-w-2xl mb-12"
                         >
                             UNDER The LIGHT

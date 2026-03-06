@@ -96,7 +96,7 @@ export default function Works() {
                 <motion.div
                     initial={{ opacity: 0, y: 50 }}
                     animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8, ease: [0.33, 1, 0.68, 1] }}
+                    transition={{ duration: 0.5, ease: [0.33, 1, 0.68, 1] }}
                 >
                     <div className="text-sm tracking-widest text-zinc-500 font-mono uppercase mb-8">
                         Works
@@ -115,8 +115,8 @@ export default function Works() {
                             key={index}
                             initial={{ opacity: 0, y: 40 }}
                             whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true, margin: '-50px' }}
-                            transition={{ duration: 0.6, ease: 'easeOut', delay: index * 0.1 }}
+                            viewport={{ once: true, margin: "0px" }}
+                            transition={{ duration: 0.5, ease: 'easeOut', delay: index * 0.04 }}
                         >
                             <Link href={`/works/${item.slug}`} className="flex flex-col group cursor-pointer block">
                                 <div className={`relative ${item.aspect} w-full overflow-hidden bg-zinc-900 mb-6`}>
@@ -144,8 +144,8 @@ export default function Works() {
                     <motion.div
                         initial={{ opacity: 0, y: 40 }}
                         whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true, margin: '-50px' }}
-                        transition={{ duration: 0.6, ease: 'easeOut' }}
+                        viewport={{ once: true, margin: "0px" }}
+                        transition={{ duration: 0.5, ease: 'easeOut' }}
                     >
                         <button
                             onClick={handleLoadMore}
