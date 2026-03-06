@@ -67,7 +67,13 @@ export default function TeamMember({ params }: { params: { slug: string } }) {
     const member = teamMembers.find((m) => m.slug === params.slug);
 
     if (!member) {
-        notFound();
+        return (
+            <div className="min-h-screen bg-black text-white flex flex-col items-center justify-center p-8">
+                <h1 className="text-4xl text-red-500 mb-4 font-bold">Error: Member Not Found</h1>
+                <p className="text-xl text-zinc-400">Attempted slug: '{params.slug}'</p>
+                <a href="/culture" className="mt-8 text-white underline">Return to Culture</a>
+            </div>
+        );
     }
 
     return (
