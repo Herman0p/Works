@@ -191,47 +191,47 @@ export default function Culture() {
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-16">
                     {/* Team Member 1 */}
-                    <div className="group">
-                        <div className="relative aspect-[3/4] w-full overflow-hidden bg-zinc-900 mb-6 mt-0 filter grayscale transition-all duration-500 group-hover:grayscale-0">
+                    <Link href="/about" className="relative z-50 block overflow-hidden cursor-pointer group mb-6 mt-0">
+                        <div className="relative aspect-[3/4] w-full overflow-hidden bg-zinc-900 filter grayscale transition-all duration-500 group-hover:grayscale-0">
                             <Image
                                 src="/hermansyah.jpg"
                                 alt="Hermansyah Adika Putra"
                                 fill
                                 sizes="(max-width: 768px) 100vw, 33vw"
-                                className="object-cover object-top group-hover:scale-105 transition-transform duration-700 ease-out"
+                                className="object-cover object-top w-full h-full transition-transform duration-700 group-hover:scale-105 ease-out"
                             />
                         </div>
-                        <h3 className="text-2xl font-bold mb-2">Hermansyah Adika Putra<span className="text-zinc-600 font-light ml-1">*</span></h3>
-                        <p className="text-zinc-400">CEO & Founder</p>
-                    </div>
+                        <h3 className="text-2xl font-bold mb-2 mt-6">Hermansyah Adika Putra<span className="text-zinc-600 font-light ml-1">*</span></h3>
+                        <p className="text-zinc-400 font-light">CEO & Founder</p>
+                    </Link>
                     {/* Team Member 2 */}
-                    <div className="group md:mt-16">
-                        <div className="relative aspect-[3/4] w-full overflow-hidden bg-zinc-900 mb-6 filter grayscale transition-all duration-500 group-hover:grayscale-0">
+                    <Link href="/about" className="relative z-50 block overflow-hidden cursor-pointer group mb-6 md:mt-16">
+                        <div className="relative aspect-[3/4] w-full overflow-hidden bg-zinc-900 filter grayscale transition-all duration-500 group-hover:grayscale-0">
                             <Image
                                 src="https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=2661&auto=format&fit=crop"
                                 alt="Sibel Damar"
                                 fill
                                 sizes="(max-width: 768px) 100vw, 33vw"
-                                className="object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+                                className="object-cover w-full h-full transition-transform duration-700 group-hover:scale-105 ease-out"
                             />
                         </div>
-                        <h3 className="text-2xl font-bold mb-2">Sibel Damar<span className="text-zinc-600 font-light ml-1">*</span></h3>
-                        <p className="text-zinc-400">Head of Marketing</p>
-                    </div>
+                        <h3 className="text-2xl font-bold mb-2 mt-6">Sibel Damar<span className="text-zinc-600 font-light ml-1">*</span></h3>
+                        <p className="text-zinc-400 font-light">Head of Marketing</p>
+                    </Link>
                     {/* Team Member 3 */}
-                    <div className="group md:mt-32">
-                        <div className="relative aspect-[3/4] w-full overflow-hidden bg-zinc-900 mb-6 filter grayscale transition-all duration-500 group-hover:grayscale-0">
+                    <Link href="/about" className="relative z-50 block overflow-hidden cursor-pointer group mb-6 md:mt-32">
+                        <div className="relative aspect-[3/4] w-full overflow-hidden bg-zinc-900 filter grayscale transition-all duration-500 group-hover:grayscale-0">
                             <Image
                                 src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=2574&auto=format&fit=crop"
                                 alt="Dave Blakely"
                                 fill
                                 sizes="(max-width: 768px) 100vw, 33vw"
-                                className="object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+                                className="object-cover w-full h-full transition-transform duration-700 group-hover:scale-105 ease-out"
                             />
                         </div>
-                        <h3 className="text-2xl font-bold mb-2">Dave Blakely<span className="text-zinc-600 font-light ml-1">*</span></h3>
-                        <p className="text-zinc-400">Advisor</p>
-                    </div>
+                        <h3 className="text-2xl font-bold mb-2 mt-6">Dave Blakely<span className="text-zinc-600 font-light ml-1">*</span></h3>
+                        <p className="text-zinc-400 font-light">Advisor</p>
+                    </Link>
                 </div>
             </section>
 
