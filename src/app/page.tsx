@@ -25,7 +25,7 @@ const itemVariants = {
 };
 
 export default function Home() {
-  const heroWords = "HERMANSYAH PUTRA.".split(" ");
+  const heroWords = "Hermansyah.AP".split(" ");
 
   return (
     <div className="min-h-screen bg-black text-white font-sans selection:bg-white selection:text-black">
@@ -35,7 +35,7 @@ export default function Home() {
           {heroWords.map((word, i) => (
             <div key={i} className="overflow-hidden pb-4">
               <motion.h1
-                className="text-6xl md:text-8xl lg:text-[10rem] font-bold tracking-tighter leading-[0.9]"
+                className="text-4xl md:text-8xl lg:text-[10rem] font-bold tracking-tighter leading-[0.9]"
                 initial={{ y: "120%" }}
                 animate={{ y: "0%" }}
                 transition={{ duration: 0.5, delay: i * 0.04, ease: appyEase }}
